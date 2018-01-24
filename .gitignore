@@ -19,3 +19,4 @@ target/classes/com/matic/vo/User.class
 target/m2e-jee/web-resources/META-INF/MANIFEST.MF
 target/m2e-jee/web-resources/META-INF/maven/SSH/SSH/pom.properties
 target/m2e-jee/web-resources/META-INF/maven/SSH/SSH/pom.xml
+.settings/org.eclipse.wst.common.project.facet.core.prefs.xml

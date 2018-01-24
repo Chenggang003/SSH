@@ -6,4 +6,6 @@ public interface LoginDao {
 
 	User query(User user) throws Exception;
 
+	void save(User user);
+
 }

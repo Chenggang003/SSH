@@ -7,22 +7,23 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-@Entity
-@Table(name="user")
+/*@Entity
+@Table(name="user")*/
 public class User {
-	@Id
-	@GeneratedValue(strategy=GenerationType.IDENTITY)
-	private Integer id;
-	@Column(name="username")
+	/*@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)*/
+	private String id;
+	/*@Column(name="username")*/
 	private String username;
-	@Column(name="password")
+	/*@Column(name="password")*/
 	private String password;
 	
 	
-	public Integer getId() {
+	
+	public String getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+	public void setId(String id) {
 		this.id = id;
 	}
 	public String getUsername() {

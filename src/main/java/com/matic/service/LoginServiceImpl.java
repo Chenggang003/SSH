@@ -25,5 +25,12 @@ public class LoginServiceImpl implements LoginService {
 	public void setLoginDao(LoginDao loginDao) {
 		this.loginDao = loginDao;
 	}
+
+
+
+	@Override
+	public void save(User user) {
+		loginDao.save(user);
+	}
 	
 }

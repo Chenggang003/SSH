@@ -10,23 +10,23 @@ import com.opensymphony.xwork2.ModelDriven;
 
 
 public class LoginAction extends ActionSupport implements ModelDriven<User>{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	private static Logger logger = LogManager.getLogger(LoginAction.class);
 	
 	private User user = new User();
 	private LoginService loginService;
 	
 	public String init(){
-		String result = "success";
-		try {
-			user.setId(1);
-			if(!loginService.query(user)){
-				result = "error";
-			}
-		} catch (Exception e) {
-			logger.error("发生错误!" + e);
-			e.printStackTrace();
-		}
-		return result;
+		User user = new User();
+//		user.setId("4");
+		user.setUsername("zhangsan");
+		user.setPassword("123123");
+		loginService.save(user);
+		return null;
 	}
 	
 
